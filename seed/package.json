@@ -1,0 +1,30 @@
+{
+  "name": "fa24-cs411-team051-nosqlnomad",
+  "version": "1.0.0",
+  "description": "## Team Member Information: - **Shuwei Cui: shuweic3** shuweic3@illinois.edu - **Marco Huang: marcoh2** marcoh2@illinois.edu - **Zexin Lin: zexinl2** zexinl2@illinois.edu - **Max Qian: zq2** zq2@illinois.edu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Team 051",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.3"
+  },
+  "volta": {
+    "node": "18.20.4"
+  },
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

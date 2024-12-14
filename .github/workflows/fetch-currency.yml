@@ -1,0 +1,33 @@
+name: Fetch Currency
+
+on:
+  workflow_dispatch: # Run manually
+  schedule:
+    - cron: "0 0 */2 * *"
+
+jobs:
+  fetch-currency:
+    name: Fetch Currency
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Fetch currency
+        run: node seed/scripts/exchange.js
+        env:
+          DB_USER: root
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          EXCHANGE_RATE_API_KEY: ${{ secrets.EXCHANGE_RATE_API_KEY }}

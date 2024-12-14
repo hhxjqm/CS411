@@ -1,0 +1,103 @@
+/* Add a background image to the page */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1527181152855-fc03fc7949c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJhY2tncm91bmR8ZW58MHx8fHwxNjg3MjM2NDg3&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Center and style the root container */
+.App {
+  max-width: 400px; /* Adjusted for a more compact layout */
+  width: 90%; /* Ensures responsiveness on smaller screens */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85); /* Slightly less opaque */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better contrast */
+}
+
+/* Add a visually appealing title */
+h1 {
+  font-size: 2rem; /* Slightly smaller font for compact layout */
+  margin-bottom: 1.5rem;
+  color: #646cff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+/* Style the input box */
+input {
+  width: 300px;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 2px solid #646cff;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 300ms, box-shadow 300ms;
+}
+
+/* Add hover and focus effects for input */
+input:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.6);
+}
+
+/* Style the login button */
+button {
+  width: 200px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #646cff, #535bf2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 300ms, transform 200ms;
+}
+
+/* Add hover and active effects for button */
+button:hover {
+  background: linear-gradient(90deg, #535bf2, #646cff);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Style the response message */
+p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Success message */
+p.success {
+  color: #4caf50;
+}
+
+/* Error message */
+p.error {
+  color: #f44336;
+  font-weight: bold; /* Slight emphasis for error messages */
+}
+
+/* Profile page styling */
+.profile {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.9); /* Make it slightly distinct */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth to the profile card */
+}

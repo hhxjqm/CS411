@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "## Team Member Information: - **Shuwei Cui: shuweic3** shuweic3@illinois.edu - **Marco Huang: marcoh2** marcoh2@illinois.edu - **Zexin Lin: zexinl2** zexinl2@illinois.edu - **Max Qian: zq2** zq2@illinois.edu",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "node build/index.js",
+    "preserve": "tsc",
+    "serve": "NODE_ENV=production node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
+}

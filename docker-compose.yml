@@ -1,0 +1,36 @@
+services:
+  web:
+    build: ./web_app
+    depends_on:
+      - database
+    volumes:
+      - type: bind
+        source: ./web_app
+        target: /app
+      - /app/node_modules
+    ports:
+      - 5173:5173
+  server:
+    build: ./server
+    depends_on:
+      - database
+    volumes:
+      - type: bind
+        source: ./server
+        target: /app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+  database:
+    build: ./seed
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=cs411
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - stored_data:/var/lib/mysql
+
+volumes:
+  stored_data:
