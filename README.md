@@ -2,11 +2,11 @@
 ### Team051 - NoSQLNoMad
 
 ## Team Member Information:
-Docker
+Build Docker
 ```bash
 docker compose up --build
 ```
-database
+Docker -> Containers -> database-1 -> Terminal
 ```bash
 sh init.sh
 ```
