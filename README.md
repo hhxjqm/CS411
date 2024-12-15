@@ -2,6 +2,17 @@
 ### Team051 - NoSQLNoMad
 
 ## Team Member Information:
+Docker
+```bash
+docker compose up --build
+```
+database
+```bash
+sh init.sh
+```
+---> http://localhost:5173/
+
+## Team Member Information:
 - **Shuwei Cui: shuweic3** shuweic3@illinois.edu
 - **Marco Huang: marcoh2** marcoh2@illinois.edu
 - **Zexin Lin: zexinl2** zexinl2@illinois.edu
